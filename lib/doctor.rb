@@ -12,7 +12,7 @@ class Doctor
   
   # given a date and a patient, creates a new appointment
   def new_appointment(date, patient)
-    Appointment.new(date, patient, self)
+    Appointment.new(patient, date, self)
   end
   
   # has many appointments
