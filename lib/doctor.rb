@@ -21,7 +21,8 @@ class Doctor
   
   # has many patients, through appointments
   def patients
-    appointments.collect{|a| a.patient}
+    x = appointments.collect{|a| a.patient}
+    x
   end
   
   def self.all
